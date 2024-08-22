@@ -1,0 +1,265 @@
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection{
+    color: #fad6ea;
+    background: #AA336A;
+}
+.text-purple-custom{
+    color: #AA336A !important;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.hidden{
+    display: none;
+}
+.add-cont{
+    box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
+    padding: 2em;
+    background: #fffbfd;
+    border-radius: 1em;
+}
+#add{
+    margin: auto;
+    min-width: 12em;
+    font-size: 1.25em;
+    height: 3em;
+    border-radius: .5em;
+    background: #AA336A;
+    border: none;
+    transition: .3s linear;
+}
+#add:hover{
+    background: #8b2a55;
+}
+.add-cont #field-error{
+    color: #AA336A;
+}
+#edit-field-error{
+    color: #AA336A;
+}
+.add-cont .label-title{
+    height: 4em;
+    border-radius: 1em 0 0 1em;
+    background: #ffeff7;
+    font-size: 1.1em;
+}
+.add-cont .label-desc{
+    height: 4em;
+    border-radius: 1em 1em 0 0;
+    background: #ffeff7;
+    font-size: 1.1em;
+    width: 45em;
+}
+.add-cont .edit-label-desc{
+    width: 100%;
+}
+.add-cont .title-inp{
+    border-radius: 0 1em 1em 0;
+    font-size: 1.1em;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    width: 100%;
+}
+.add-cont .title-inp:focus{
+    border: 1px solid #f3a9cc;
+    outline: none;
+    box-shadow: #f3a9cc 0 0 4px;
+}
+
+.add-cont .maxLenDisplay{
+    background: none;
+    border: none;
+    position: relative;
+    right: 3.75em;
+    top: 1.5em;
+}
+.editMaxLenDisplay{
+    border: none;
+    position: relative;
+    top: 1.5em;
+    margin-left: 10px;
+}
+#impCheck{
+    border-color: #AA336A;
+    box-shadow: #AA336A 0 0 2px;
+}
+#impCheck:focus{
+    box-shadow: #AA336A 0 0 5px;
+    border-color: #AA336A;
+}
+
+#impCheck:checked{
+    background-color: #AA336A;
+    border-color: #AA336A;
+    box-shadow: #AA336A 0 0 2px;
+}
+
+    #editBtn{
+        margin: 1em auto auto;
+        font-size: 1.25em;
+        width: 10em;
+        height: 2.5em;
+        border-radius: .5em;
+        background: #AA336A;
+        border: none;
+        transition: .3s linear;
+    }
+    #editBtn:hover{
+        background: #8b2a55;
+    }
+
+
+.add-cont .desc-inp{
+    border-radius: 0 0 1em 1em;
+    font-size: 1.1em;
+    width: 45em;
+}
+.add-cont .desc-inp:focus{
+    border: 1px solid #f3a9cc;
+    outline: none;
+    box-shadow: #f3a9cc 0 0 4px;
+}
+#editDesc{
+    width: 100%;
+}
+.add-cont .status-inp{
+    width: 36.5em;
+}
+.add-cont #dateLine{
+    width: 36em;
+}
+.todoList-cont .todos-card{
+    box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
+    padding: 1em;
+    background: #fffbfd;
+    border-radius: 1em;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+}
+.todoList-cont .todos-card .numbering{
+    color: #b73071;
+    text-align: center;
+    background: #ffe2ee;
+    border-radius: 50%;
+    padding: 4px;
+    width: 1.75em;
+    height: 1.75em;
+}
+.todoList-cont .dateTime{
+    color: rgba(131, 131, 131, 0.57);
+}
+.todoList-cont .mini-nav{
+    box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
+    padding: 1em;
+    background: #fffbfd;
+    border-radius: 1em;
+    border: 1px solid #e6e6e6;
+}
+.todoList-cont .mini-nav .nav-btn:focus{
+    border: none;
+}
+.todoList-cont .mini-nav .dropdown .dropdown-menu{
+    background: #fffbfd;
+    box-shadow: rgba(77, 0, 37, 0.23) 0 0 1em;
+    border-radius: 1em;
+    width: 50em;
+    padding: 2em;
+    font-size: 1.1em;
+    margin-top: 1em;
+}
+.todoList-cont .mini-nav .dropdown-li button:hover{
+    background: rgba(170, 51, 106, 0.29);
+}
+.todoList-cont .mini-nav .dropdown .dropdown-footer button{
+    background: #AA336A;
+    color: #fffbfd;
+    width: 15em;
+    margin: 1em auto ;
+    padding: .5em;
+    border-radius: .5em;
+}
+.todoList-cont .search{
+    border-radius: 1em;
+    font-size: 1.1em;
+    border: #AA336A 3px solid;
+    width: 30em;
+}
+.todoList-cont .search:focus{
+    outline: none;
+    box-shadow: #AA336A 0 0 4px;
+}
+.todoList-cont .search-btn{
+    color: #fad6ea;
+    min-width: 3em;
+    font-size: 1.25em;
+    height: 3em;
+    border-radius: 0 1em 1em 0;
+    background: #AA336A;
+    border: none;
+    transition: .3s linear;
+    position: relative;
+    right: 3.45em;
+}
+.todoList-cont .search-btn:hover{
+    background: #8b2a55;
+}
+.todoList-cont .clear-btn{
+    color: #AA336A;
+    min-width: 3em;
+    font-size: 1.25em;
+    height: 3em;
+    border-radius: 1em;
+}
+
+.todoList-cont .clear-btn:focus{
+    color: #AA336A;
+    border: none;
+}
+.todoList-cont .important-wrapper{
+    background: #fad6ea;
+    padding: 5px 10px;
+    border-radius: 1em 1em 0 0;
+    width: 100%;
+    position: relative;
+    height: 3em;
+    top: 1em;
+    box-shadow: #ff74ae 0 0 5px;
+}
+.todoList-cont .wrapper{
+    background: none;
+    border: #ffd3e6 solid 1px;
+    border-radius: 1em;
+    width: 13em;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.todoList-cont .wrapper p{
+    margin: 0;
+    text-align: center;
+}
+.todoList-cont .wrapper-status p .extra-Not{
+    background: #ffe2ee;
+    color: #AA336A;
+    padding: 5px 10px;
+    border-radius: 1em;
+}
+.todoList-cont .wrapper-status p .extra-Pending{
+    background: #e2eeff;
+    color: #3369aa;
+    padding: 5px 10px;
+    border-radius: 1em;
+}
+.todoList-cont .wrapper-status p .extra-Completed{
+    background: #e2ffe3;
+    color: #33aa3f;
+    padding: 5px 10px;
+    border-radius: 1em;
+}
